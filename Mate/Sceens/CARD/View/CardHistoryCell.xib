@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="CardHistoryCell" customModule="Mate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrS-8U-bPu" customClass="DesignableView" customModule="Mate" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="97"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_history_1" translatesAutoresizingMaskIntoConstraints="NO" id="VnD-qc-UHr">
+                                <rect key="frame" x="26" y="28" width="41" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="Kh2-2f-2N1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="nWO-eI-piR">
+                                <rect key="frame" x="80" y="28" width="225" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Покупка в магазине" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSK-om-ruA">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сертификат WizzAir 50 евро" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtB-CG-Itd">
+                                        <rect key="frame" x="0.0" y="21.5" width="225" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                                        <color key="textColor" red="0.4549019608" green="0.4549019608" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-223" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cin-C5-dKX">
+                                <rect key="frame" x="305" y="36" width="70" height="25.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="d0v-w4-a0b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CARENCY-SYMBOL" translatesAutoresizingMaskIntoConstraints="NO" id="0Eu-e4-KQQ">
+                                <rect key="frame" x="380" y="36" width="16" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="FMb-ga-B0d"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VnD-qc-UHr" firstAttribute="centerY" secondItem="mrS-8U-bPu" secondAttribute="centerY" id="1wW-Wb-As0"/>
+                            <constraint firstItem="cin-C5-dKX" firstAttribute="leading" secondItem="nWO-eI-piR" secondAttribute="trailing" id="2KN-UZ-QY2"/>
+                            <constraint firstItem="cin-C5-dKX" firstAttribute="centerY" secondItem="0Eu-e4-KQQ" secondAttribute="centerY" id="4p1-8v-KLW"/>
+                            <constraint firstItem="nWO-eI-piR" firstAttribute="centerY" secondItem="mrS-8U-bPu" secondAttribute="centerY" id="DNY-zP-lMr"/>
+                            <constraint firstAttribute="trailing" secondItem="0Eu-e4-KQQ" secondAttribute="trailing" constant="24" id="dNN-XQ-Akw"/>
+                            <constraint firstItem="nWO-eI-piR" firstAttribute="leading" secondItem="VnD-qc-UHr" secondAttribute="trailing" constant="13" id="f5g-L3-1bW"/>
+                            <constraint firstItem="VnD-qc-UHr" firstAttribute="leading" secondItem="mrS-8U-bPu" secondAttribute="leading" constant="26" id="g8Z-Dw-XWS"/>
+                            <constraint firstItem="0Eu-e4-KQQ" firstAttribute="centerY" secondItem="mrS-8U-bPu" secondAttribute="centerY" id="jE0-AO-ZsC"/>
+                            <constraint firstItem="0Eu-e4-KQQ" firstAttribute="leading" secondItem="cin-C5-dKX" secondAttribute="trailing" constant="5" id="tYh-sV-VRD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mrS-8U-bPu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ek1-SJ-CWZ"/>
+                    <constraint firstItem="mrS-8U-bPu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kyg-B2-N2M"/>
+                    <constraint firstAttribute="trailing" secondItem="mrS-8U-bPu" secondAttribute="trailing" id="eF3-7f-Bdx"/>
+                    <constraint firstAttribute="bottom" secondItem="mrS-8U-bPu" secondAttribute="bottom" id="jqK-vp-uJh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="carrencyLogo" destination="0Eu-e4-KQQ" id="Yu4-MK-aZZ"/>
+                <outlet property="descriptionLabel" destination="UtB-CG-Itd" id="7cf-Wv-Anp"/>
+                <outlet property="logo" destination="VnD-qc-UHr" id="Q4M-tE-svn"/>
+                <outlet property="sum" destination="cin-C5-dKX" id="moY-jk-QAc"/>
+                <outlet property="titleLabel" destination="pSK-om-ruA" id="IvB-6T-nYT"/>
+            </connections>
+            <point key="canvasLocation" x="210.1449275362319" y="153.01339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CARENCY-SYMBOL" width="23" height="25"/>
+        <image name="Icon_history_1" width="41" height="41"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

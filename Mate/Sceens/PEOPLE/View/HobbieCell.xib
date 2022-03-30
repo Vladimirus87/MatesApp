@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HobbieCell" customModule="Mate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsi-BR-udy" customClass="DesignableView" customModule="Mate" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="319" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="хобби" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdo-xu-ofj">
+                                <rect key="frame" x="8" y="30.5" width="303" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.30588235289999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsW-WV-yXF">
+                                <rect key="frame" x="0.0" y="26.5" width="319" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="RSJ-2a-WRj"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" "/>
+                                <connections>
+                                    <action selector="itemPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="kVM-QU-MkX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.92549019607843142" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vsW-WV-yXF" firstAttribute="leading" secondItem="Tsi-BR-udy" secondAttribute="leading" id="5ou-Wp-mYz"/>
+                            <constraint firstAttribute="trailing" secondItem="vsW-WV-yXF" secondAttribute="trailing" id="QO6-Cc-zUA"/>
+                            <constraint firstItem="Tdo-xu-ofj" firstAttribute="centerY" secondItem="Tsi-BR-udy" secondAttribute="centerY" id="UOL-0m-e1e"/>
+                            <constraint firstAttribute="trailing" secondItem="Tdo-xu-ofj" secondAttribute="trailing" constant="8" id="g9X-bq-hNo"/>
+                            <constraint firstItem="vsW-WV-yXF" firstAttribute="centerY" secondItem="Tsi-BR-udy" secondAttribute="centerY" id="nd6-qJ-8Bs"/>
+                            <constraint firstItem="Tdo-xu-ofj" firstAttribute="leading" secondItem="Tsi-BR-udy" secondAttribute="leading" constant="8" id="tVu-XL-7tI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Tsi-BR-udy" secondAttribute="bottom" id="Ne7-8J-d96"/>
+                <constraint firstAttribute="trailing" secondItem="Tsi-BR-udy" secondAttribute="trailing" id="fCR-ys-WIh"/>
+                <constraint firstItem="Tsi-BR-udy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jXS-dN-iOd"/>
+                <constraint firstItem="Tsi-BR-udy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wSX-9J-kxR"/>
+            </constraints>
+            <size key="customSize" width="319" height="80"/>
+            <connections>
+                <outlet property="backView" destination="Tsi-BR-udy" id="ChP-AX-RIY"/>
+                <outlet property="name" destination="Tdo-xu-ofj" id="A8M-yK-HdB"/>
+            </connections>
+            <point key="canvasLocation" x="418" y="265"/>
+        </collectionViewCell>
+    </objects>
+</document>

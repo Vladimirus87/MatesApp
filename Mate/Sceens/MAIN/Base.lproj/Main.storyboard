@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="euz-Qf-YR4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="CoU-Ev-tK0">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="euz-Qf-YR4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="siy-4h-cNt"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="PiR-ip-UYw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="greyBlue"/>
+                        <color key="barTintColor" systemColor="tintColor"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RaJ-De-pr8" kind="relationship" relationship="viewControllers" id="Vxu-3W-sWV"/>
+                        <segue destination="ela-kL-foa" kind="relationship" relationship="viewControllers" id="1tC-py-JXs"/>
+                        <segue destination="sLx-jo-UNL" kind="relationship" relationship="viewControllers" id="Tu5-lk-jID"/>
+                        <segue destination="Bsw-ig-aXQ" kind="relationship" relationship="viewControllers" id="BO0-oa-B7P"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oA-Ob-LB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Shop-->
+        <scene sceneID="sIG-IZ-o3X">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Shop" id="ela-kL-foa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Shop-Icon" selectedImage="Shop-Icon_black" id="UuS-9d-slH">
+                        <color key="badgeColor" name="greyBlue"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJ7-Hq-haX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="685"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="5Sz-ff-9fh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="Bsw-ig-aXQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Account" selectedImage="Account_black" id="87X-Xt-pMg">
+                        <color key="badgeColor" name="greyBlue"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXi-Xv-gvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1601" y="684"/>
+        </scene>
+        <!--Card-->
+        <scene sceneID="VN4-qe-FM9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Card" id="RaJ-De-pr8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Card-Icon" selectedImage="Card-Icon_black" id="1nV-3R-Sfo">
+                        <color key="badgeColor" name="greyBlue"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uC-mB-L6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595" y="684"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="Kfs-NM-IMl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="People" id="sLx-jo-UNL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Team-Icon" selectedImage="Team-Icon_black" id="ihS-yX-8Fl">
+                        <color key="badgeColor" name="greyBlue"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxw-2A-OdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1272" y="684"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Account" width="23" height="23"/>
+        <image name="Account_black" width="23" height="23"/>
+        <image name="Card-Icon" width="25" height="20"/>
+        <image name="Card-Icon_black" width="25" height="20"/>
+        <image name="Shop-Icon" width="24" height="21"/>
+        <image name="Shop-Icon_black" width="24" height="21"/>
+        <image name="Team-Icon" width="26" height="21"/>
+        <image name="Team-Icon_black" width="26" height="21"/>
+        <namedColor name="greyBlue">
+            <color red="0.60392156862745094" green="0.63529411764705879" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

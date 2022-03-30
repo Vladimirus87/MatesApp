@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="NotifyCell" customModule="Mate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8f-0d-fss" customClass="DesignableView" customModule="Mate" customModuleProvider="target">
+                        <rect key="frame" x="21" y="4" width="286" height="112"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Message-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="o5o-1p-pGG">
+                                <rect key="frame" x="11" y="40.5" width="31" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="RfE-ic-zxm"/>
+                                    <constraint firstAttribute="height" constant="31" id="hS7-SY-Oiu"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TOD-1O-Il5">
+                                <rect key="frame" x="54" y="35" width="179" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сообщение от Алексей А." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3g1-ye-ZTf">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начало сообщения от Алексе…" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AQ-bO-nzK">
+                                        <rect key="frame" x="0.0" y="25" width="179" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <color key="textColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55.55" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3v-HA-Pv3">
+                                <rect key="frame" x="238" y="35.5" width="40" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="JuG-m5-nMq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="13"/>
+                                <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C3v-HA-Pv3" firstAttribute="leading" secondItem="TOD-1O-Il5" secondAttribute="trailing" constant="5" id="F9k-dw-Wnb"/>
+                            <constraint firstItem="TOD-1O-Il5" firstAttribute="centerY" secondItem="I8f-0d-fss" secondAttribute="centerY" id="HXi-R6-XC4"/>
+                            <constraint firstItem="o5o-1p-pGG" firstAttribute="leading" secondItem="I8f-0d-fss" secondAttribute="leading" constant="11" id="jbS-Zd-oiX"/>
+                            <constraint firstItem="C3v-HA-Pv3" firstAttribute="centerY" secondItem="3g1-ye-ZTf" secondAttribute="centerY" id="l66-cm-Oar"/>
+                            <constraint firstAttribute="trailing" secondItem="C3v-HA-Pv3" secondAttribute="trailing" constant="8" id="sc1-3X-Bik"/>
+                            <constraint firstItem="o5o-1p-pGG" firstAttribute="centerY" secondItem="I8f-0d-fss" secondAttribute="centerY" id="vZh-wW-zvK"/>
+                            <constraint firstItem="TOD-1O-Il5" firstAttribute="leading" secondItem="o5o-1p-pGG" secondAttribute="trailing" constant="12" id="wFv-aD-f16"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="I8f-0d-fss" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="KYl-VF-1Uk"/>
+                    <constraint firstAttribute="trailing" secondItem="I8f-0d-fss" secondAttribute="trailing" constant="21" id="Uun-L3-LxV"/>
+                    <constraint firstItem="I8f-0d-fss" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="VoT-aY-TaE"/>
+                    <constraint firstAttribute="bottom" secondItem="I8f-0d-fss" secondAttribute="bottom" constant="5" id="hi5-Dz-cVW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backView" destination="I8f-0d-fss" id="b4T-SL-qBf"/>
+                <outlet property="icon" destination="o5o-1p-pGG" id="sdA-OS-Kgp"/>
+                <outlet property="subtitleLabel" destination="6AQ-bO-nzK" id="0UZ-Qg-QmU"/>
+                <outlet property="timeLabel" destination="C3v-HA-Pv3" id="EoJ-uk-9Hk"/>
+                <outlet property="titleLabel" destination="3g1-ye-ZTf" id="sw4-hW-BiY"/>
+            </connections>
+            <point key="canvasLocation" x="142.02898550724638" y="179.12946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Message-Icon" width="31" height="31"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
